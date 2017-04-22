@@ -8,6 +8,9 @@ body{
 .header{
 	text-align: center;
 }
+.title h2{
+	margin: 0;
+}
 .photo-container{
 	height: 80%;
 }
@@ -30,36 +33,39 @@ body{
 	display: none;
 }*/
 .center{
+	margin: 0 auto;
 	height: 84vh;
 	width: 37vw;
 	margin: 5px;
 }
 .left, .right{
-	margin-top: 12vh;
-	height: 63vh;
-	width: 28vw;
+	margin-top: 18vh;
+	height: 58vh;
+	width: 26vw;
 }
 .farLeft, .farRight{
+	margin-top: 12vh;
 	height: 48vh;
-	width: 21vw;
 }
 .skinny{
 	width: 0vw;
 }
 .left{
+	left: 0px;
 }
 .right{
-
+	right: 0px;
+}
+.hidden{
+	display: none;
 }
 
 .photo1{
 	background-image: url("img/city-16x9-500w.jpg");
 }
-
 .photo2{
 	background-image: url("img/kids-16x9-500w.jpg");
 }
-
 .photo3{
 	background-image: url("img/dance-16x9-500w.jpg");
 }
@@ -70,5 +76,14 @@ body{
 	background-image: url("img/city-16x9-500w-2.jpg");
 }
 .photo6{
-	background-image: url("img/kids-16x9-500w-2.jpg");
+	background-image: url("img/portrait-16x9-500w-2.jpg");
+}
+.photo7{
+	background-image: url("img/dance-16x9-500w-2.jpg");
+}
+.photo8{
+	background-image: url("img/portrait-16x9-500w-3.jpg");
+}
+.photo9{
+	background-image: url("img/kids-16x9-500w-3.jpg");
 }

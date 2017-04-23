@@ -63,24 +63,27 @@ document.addEventListener("click", function(event){
 	var hidden2 = document.getElementsByClassName("hidden2")[0];
 	var hidden3 = document.getElementsByClassName("hidden3")[0];
 	var hidden4 = document.getElementsByClassName("hidden4")[0];
-	center.classList.remove("center");
-	left.classList.remove("left");
-	right.classList.remove("right");
-	farRight.classList.remove("farRight", "skinny");
-	farLeft.classList.remove("farLeft", "skinny");
-	hidden1.classList.remove("hidden", "hidden1");
-	hidden2.classList.remove("hidden2");
-	hidden3.classList.remove("hidden3");
-	hidden4.classList.remove("hidden4");
-	farRight.classList.add("right");
-	center.classList.add("left");
-	right.classList.add("center");
-	left.classList.add("farLeft", "skinny");
-	hidden1.classList.add("farRight", "skinny");
-	farLeft.classList.add("hidden", "hidden4");
-	hidden2.classList.add("hidden1");
-	hidden3.classList.add("hidden2");
-	hidden4.classList.add("hidden3");
+	
+	// if(event.keyCode === 39){
+		center.classList.remove("center");
+		left.classList.remove("left");
+		right.classList.remove("right");
+		farRight.classList.remove("farRight", "skinny");
+		farLeft.classList.remove("farLeft", "skinny");
+		hidden1.classList.remove("hidden", "hidden1");
+		hidden2.classList.remove("hidden2");
+		hidden3.classList.remove("hidden3");
+		hidden4.classList.remove("hidden4");
+		farRight.classList.add("right");
+		center.classList.add("left");
+		right.classList.add("center");
+		left.classList.add("farLeft", "skinny");
+		hidden1.classList.add("farRight", "skinny");
+		farLeft.classList.add("hidden", "hidden4");
+		hidden2.classList.add("hidden1");
+		hidden3.classList.add("hidden2");
+		hidden4.classList.add("hidden3");
+	// }
 
 });
 // photos.addEventListener("click", function(){});

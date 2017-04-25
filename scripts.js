@@ -52,38 +52,47 @@ var thumbnails = document.getElementsByClassName("thumbnails");
 // 	} else if (event.keyCode === 37){}
 // });
 
-document.addEventListener("click", function(event){
-	console.log("clicks")
+document.addEventListener("keydown", function(event){
 	var left = document.getElementsByClassName("left")[0];
 	var farLeft = document.getElementsByClassName("farLeft")[0];
 	var center = document.getElementsByClassName("center")[0];
 	var right = document.getElementsByClassName("right")[0];
 	var farRight = document.getElementsByClassName("farRight")[0];
-	var hidden1 = document.getElementsByClassName("hidden1")[0];
-	var hidden2 = document.getElementsByClassName("hidden2")[0];
-	var hidden3 = document.getElementsByClassName("hidden3")[0];
-	var hidden4 = document.getElementsByClassName("hidden4")[0];
+	var hiddenR1 = document.getElementsByClassName("hiddenR1")[0];
+	var hiddenR2 = document.getElementsByClassName("hiddenR2")[0];
+	var hiddenL1 = document.getElementsByClassName("hiddenL1")[0];
+	var hiddenL2 = document.getElementsByClassName("hiddenL2")[0];
+	center.classList.remove("center");
+	left.classList.remove("left");
+	right.classList.remove("right");
+	farRight.classList.remove("farRight", "skinny");
+	farLeft.classList.remove("farLeft", "skinny");
+	hiddenR1.classList.remove("hidden", "hiddenR1");
+	hiddenR2.classList.remove("hiddenR2");
+	hiddenL2.classList.remove("hiddenL2");
+	hiddenL1.classList.remove("hiddenL1");
 	
-	// if(event.keyCode === 39){
-		center.classList.remove("center");
-		left.classList.remove("left");
-		right.classList.remove("right");
-		farRight.classList.remove("farRight", "skinny");
-		farLeft.classList.remove("farLeft", "skinny");
-		hidden1.classList.remove("hidden", "hidden1");
-		hidden2.classList.remove("hidden2");
-		hidden3.classList.remove("hidden3");
-		hidden4.classList.remove("hidden4");
+	if(event.keyCode === 39){
 		farRight.classList.add("right");
 		center.classList.add("left");
 		right.classList.add("center");
 		left.classList.add("farLeft", "skinny");
-		hidden1.classList.add("farRight", "skinny");
-		farLeft.classList.add("hidden", "hidden4");
-		hidden2.classList.add("hidden1");
-		hidden3.classList.add("hidden2");
-		hidden4.classList.add("hidden3");
-	// }
+		hiddenR1.classList.add("farRight", "skinny");
+		farLeft.classList.add("hidden", "hiddenL1");
+		hiddenR2.classList.add("hiddenR1");
+		hiddenL2.classList.add("hiddenR2");
+		hiddenL1.classList.add("hiddenL2");
+	} else if (event.keyCode === 37){
+		farRight.classList.add("hiddenL1");
+		center.classList.add("right");
+		right.classList.add("farRight", "skinny");
+		left.classList.add("center");
+		hiddenR1.classList.add("hiddenR2");
+		farLeft.classList.add("left");
+		hiddenR2.classList.add("hiddenL2");
+		hiddenL2.classList.add("hiddenL1");
+		hiddenL1.classList.add("farRight", "skinny");
+	}
 
 });
 // photos.addEventListener("click", function(){});

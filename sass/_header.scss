@@ -1,0 +1,125 @@
+.navbody {
+  font-family: 'Roboto', Ariel, sans-serif;
+  margin: 0px;
+}
+
+
+#header-container {
+  color: white;
+  /*background-color: #333;*/
+  position: fixed;
+  bottom: 3vh;
+  text-align: center;
+  opacity: 0.8;
+}
+#header-container>h1 {
+  margin: 0;
+  text-shadow: 3px 3px 2px black;
+}
+#header-container>h2 {
+  margin: 3px 0 0 0;
+  text-shadow: 3px 3px 2px black;
+}
+#hamburger:click .nav{
+  transition: 1s;
+  left: 80vw;
+}
+.nav {
+  position: fixed;
+  left: 100vw;
+  list-style: none;
+  padding: 0 15px !important;
+  margin: 0;
+  line-height: 5px;
+  text-shadow: 1px 1px 1px black;
+  background-color: #333;
+  background-blend-mode: darken;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0.9s, opacity 1s, slide 1s;
+  transition: visibility 0.9s, opacity 1s, slide 1s;
+}
+
+.responsive {
+  visibility: visible;
+  left: 80vw;
+  opacity: 1;
+  list-style: none;
+}
+
+.first-line {
+  width: 22%;
+  padding: 14px 0;
+}
+
+.second-line {
+  width: 30%;
+  margin: 0 10%;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 12px 24px;
+}
+#hamburger {
+  font-size: 3em;
+  padding: 14px 0;
+  position: fixed;
+  left: 88vw;
+  top: 5vh;
+  text-shadow: 2px 2px 2px black;
+  text-decoration: none;
+}
+
+#next, #last{
+  font-size: 2em;
+  position: fixed;
+  text-shadow: 2px 2px 2px black;
+  text-decoration: none;
+  top: 70vh;
+}
+#next{
+  left: 91vw;
+}
+#last{
+  left: 6vw;
+}
+@media screen and (max-width: 440px) {
+  #header-container {
+    min-width: 300px;
+    width: 100%;
+  }
+  #header-container>h1 {
+    font-size: 1.5em;
+  }
+  #header-container>h2 {
+    font-size: 1em;
+  }
+  .nav-link {
+    font-size: 0.8em;
+  }
+}
+
+
+
+@media screen and (min-width: 440px) {
+  #header-container {
+    width: 440px;
+    left: calc((100% - 440px) / 2);
+  }
+
+  #header-container>h1 {
+    font-size: 1.8em;
+  }
+  #header-container>h2 {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .nav-sm {
+    position: fixed;
+    right: 5vw;
+  }
+}

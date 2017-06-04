@@ -27,31 +27,33 @@ body{
 .center{
 	margin: 0 auto;
 	height: 87vh;
-	width: 39%;
+	width: 41%;
 	min-width: 330px;
-	margin: 2px;
 }
 .left, .right{
-	margin: 18vh 2px 0 2px;
-	height: 58vh;
-	width: 26vw;
-	position: absolute;
+	margin: 12vh 2px 0 2px;
+	height: 60vh;
+	width: 27vw;
 	z-index: -1;
+	position: absolute;
+}
+
+@keyframes posAbsolute {
+	0% { position: static;}
+	100% { position: absolute;}
 }
 
 .farLeft, .farRight{
 	margin-top: 30vh;
-    height: 30vh;
+    height: 0vh;
+	width: 0vw;
 	z-index: -2;
 }
-.skinny{
-	width: 0vw;
-}
 .left{
-	left: 0px;
+	left: 2vw;
 }
 .right{
-	right: 0px;
+	right: 2vw;
 }
 .hidden{
 	display: none;
@@ -83,4 +85,31 @@ body{
 }
 .photo9{
 	background-image: url("../img/kids-16x9-500w-3.jpg");
+}
+.photo10{
+	background-image: url("../img/nature-16x9-500w-3.jpg");
+}
+.photo11{
+	background-image: url("../img/wedding-16x9-500w.jpg");
+}
+.photo12{
+	background-image: url("../img/kids-16x9-500w-2.jpg");
+}
+.photo13{
+	background-image: url("../img/nature-16x9-500w-2.jpg");
+}
+.photo14{
+	background-image: url("../img/dance-16x9-500w-3.jpg");
+}
+.photo15{
+	background-image: url("../img/wedding-16x9-500w-2.jpg");
+}
+.photo16{
+	background-image: url("../img/nature-16x9-500w.jpg");
+}
+.photo17{
+	background-image: url("../img/kids-16x9-500w-4.jpg");
+}
+.photo18{
+	background-image: url("../img/wedding-16x9-500w-3.jpg");
 }

@@ -24,20 +24,18 @@ body{
 	width: 37vw;
 	transition: all 1s;
 }
-.thumbnails{
-	height:10%;
-}
 .center{
 	margin: 0 auto;
 	height: 87vh;
 	width: 39%;
 	min-width: 330px;
-	margin: 5px;
+	margin: 2px;
 }
 .left, .right{
-	margin: 18vh 5px 0 0;
+	margin: 18vh 2px 0 2px;
 	height: 58vh;
 	width: 26vw;
+	position: absolute;
 }
 .farLeft, .farRight{
 	margin-top: 30vh;

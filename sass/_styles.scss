@@ -17,7 +17,6 @@ body{
 .carousel{
 	display: flex;
 	justify-content: center;
-	overflow-x: hidden;
 }
 .photo{
 	background-size: cover;
@@ -28,13 +27,11 @@ body{
 .thumbnails{
 	height:10%;
 }
-/*.hide{
-	display: none;
-}*/
 .center{
 	margin: 0 auto;
 	height: 87vh;
-	width: 39vw;
+	width: 39%;
+	min-width: 330px;
 	margin: 5px;
 }
 .left, .right{
@@ -60,29 +57,29 @@ body{
 }
 
 .photo1{
-	background-image: url("img/city-16x9-500w.jpg");
+	background-image: url("../img/city-16x9-500w.jpg");
 }
 .photo2{
-	background-image: url("img/kids-16x9-500w.jpg");
+	background-image: url("../img/kids-16x9-500w.jpg");
 }
 .photo3{
-	background-image: url("img/dance-16x9-500w.jpg");
+	background-image: url("../img/dance-16x9-500w.jpg");
 }
 .photo4{
-	background-image: url("img/portrait-16x9-500w.jpg");
+	background-image: url("../img/portrait-16x9-500w.jpg");
 }
 .photo5{
-	background-image: url("img/city-16x9-500w-2.jpg");
+	background-image: url("../img/city-16x9-500w-2.jpg");
 }
 .photo6{
-	background-image: url("img/portrait-16x9-500w-2.jpg");
+	background-image: url("../img/portrait-16x9-500w-2.jpg");
 }
 .photo7{
-	background-image: url("img/dance-16x9-500w-2.jpg");
+	background-image: url("../img/dance-16x9-500w-2.jpg");
 }
 .photo8{
-	background-image: url("img/portrait-16x9-500w-3.jpg");
+	background-image: url("../img/portrait-16x9-500w-3.jpg");
 }
 .photo9{
-	background-image: url("img/kids-16x9-500w-3.jpg");
+	background-image: url("../img/kids-16x9-500w-3.jpg");
 }

@@ -13,7 +13,14 @@ document.addEventListener("keydown", function(event) {
     } else if (event.keyCode === 37) {
         movePhotosRight();
     }
-    console.log(hiddenPhotosArray);
+});
+
+document.addEventListener("click", function() {
+    if (event.clientX >= window.innerWidth / 2) {
+        movePhotosLeft();
+    } else {
+        movePhotosRight();
+    }
 });
 
 function movePhotosLeft() {

@@ -32,11 +32,13 @@ body {
   margin: 18vh 2px 0 2px;
   height: 58vh;
   width: 26vw;
-  position: absolute; }
+  position: absolute;
+  z-index: -1; }
 
 .farLeft, .farRight {
   margin-top: 30vh;
-  height: 30vh; }
+  height: 30vh;
+  z-index: -2; }
 
 .skinny {
   width: 0vw; }

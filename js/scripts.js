@@ -11,8 +11,20 @@ var photo15 = document.getElementsByClassName("photo15")[0];
 var photo16 = document.getElementsByClassName("photo16")[0];
 var photo17 = document.getElementsByClassName("photo17")[0];
 var photo18 = document.getElementsByClassName("photo18")[0];
+var carousel = document.getElementsByClassName("carousel")[0];
 
 var hiddenPhotosArray = [];
+var hamburgerButton = document.getElementsByClassName("hamburger-button")[0];
+var hamburgerMenu = document.getElementsByClassName("hamburger-menu")[0];
+
+hamburgerButton.addEventListener("click", function() {
+    if ((hamburgerButton.innerHTML = "X")) {
+        hamburgerButton.innerHTML = "&#9776";
+    } else {
+        hamburgerButton.innerHTML = "X";
+    }
+    hamburgerMenu.classList.toggle("show-hamburger-menu");
+});
 
 hiddenPhotosArray.push(
     photo6,
@@ -38,7 +50,7 @@ document.addEventListener("keydown", function(event) {
     }
 });
 
-document.addEventListener("click", function() {
+carousel.addEventListener("click", function() {
     if (event.clientX >= window.innerWidth / 2) {
         movePhotosLeft();
     } else {

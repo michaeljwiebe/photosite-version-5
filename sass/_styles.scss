@@ -4,6 +4,7 @@
 
 body{
 	background-color: lightgrey;
+	overflow-x: hidden;
 }
 .header{
 	text-align: center;
@@ -11,105 +12,4 @@ body{
 .title h2{
 	margin-top: -20px;
 	margin-bottom: 0;
-}
-.photo-container{
-}
-.carousel{
-	display: flex;
-	justify-content: center;
-}
-.photo{
-	background-size: cover;
-	height: 70vh;
-	width: 37vw;
-	transition: all 1s;
-}
-.center{
-	margin: 0 auto;
-	height: 87vh;
-	width: 41%;
-	min-width: 330px;
-}
-.left, .right{
-	margin: 12vh 2px 0 2px;
-	height: 60vh;
-	width: 27vw;
-	z-index: -1;
-	position: absolute;
-}
-
-@keyframes posAbsolute {
-	0% { position: static;}
-	100% { position: absolute;}
-}
-
-.farLeft, .farRight{
-	margin-top: 30vh;
-    height: 0vh;
-	width: 0vw;
-	z-index: -2;
-}
-.left{
-	left: 2vw;
-}
-.right{
-	right: 2vw;
-}
-.hidden{
-	display: none;
-}
-
-.photo1{
-	background-image: url("../img/city-16x9-500w.jpg");
-}
-.photo2{
-	background-image: url("../img/kids-16x9-500w.jpg");
-}
-.photo3{
-	background-image: url("../img/dance-16x9-500w.jpg");
-}
-.photo4{
-	background-image: url("../img/portrait-16x9-500w.jpg");
-}
-.photo5{
-	background-image: url("../img/city-16x9-500w-2.jpg");
-}
-.photo6{
-	background-image: url("../img/portrait-16x9-500w-2.jpg");
-}
-.photo7{
-	background-image: url("../img/dance-16x9-500w-2.jpg");
-}
-.photo8{
-	background-image: url("../img/portrait-16x9-500w-3.jpg");
-}
-.photo9{
-	background-image: url("../img/kids-16x9-500w-3.jpg");
-}
-.photo10{
-	background-image: url("../img/nature-16x9-500w-3.jpg");
-}
-.photo11{
-	background-image: url("../img/wedding-16x9-500w.jpg");
-}
-.photo12{
-	background-image: url("../img/kids-16x9-500w-2.jpg");
-}
-.photo13{
-	background-image: url("../img/nature-16x9-500w-2.jpg");
-}
-.photo14{
-	background-image: url("../img/dance-16x9-500w-3.jpg");
-}
-.photo15{
-	background-image: url("../img/wedding-16x9-500w-2.jpg");
-}
-.photo16{
-	background-image: url("../img/nature-16x9-500w.jpg");
-}
-.photo17{
-	background-image: url("../img/kids-16x9-500w-4.jpg");
-}
-.photo18{
-	background-image: url("../img/wedding-16x9-500w-3.jpg");
 }

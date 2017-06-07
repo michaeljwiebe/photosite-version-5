@@ -2,6 +2,8 @@
     position: fixed;
     top: 30px;
     right: 10px;
+    width: 48px;
+    text-align: center;
     padding: 10px;
     background-color: rgb(63, 59, 250);
     border-radius: 8px;
@@ -30,6 +32,7 @@
 .form-inputs{
     font-size: 16px;
     padding: 10px;
+    margin: 10px;
 }
 .form-subject{
     width: 100%;

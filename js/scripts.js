@@ -12,18 +12,32 @@ var photo16 = document.getElementsByClassName("photo16")[0];
 var photo17 = document.getElementsByClassName("photo17")[0];
 var photo18 = document.getElementsByClassName("photo18")[0];
 var carousel = document.getElementsByClassName("carousel")[0];
-
 var hiddenPhotosArray = [];
 var hamburgerButton = document.getElementsByClassName("hamburger-button")[0];
 var hamburgerMenu = document.getElementsByClassName("hamburger-menu")[0];
+var overlay = document.getElementsByClassName("overlay")[0];
+var modalBox = document.getElementsByClassName("modal-box")[0];
+var closeBtn = document.getElementsByClassName("close")[0];
+
+setTimeout(function() {
+    overlay.classList.add("show-overlay");
+}, 10000);
+setTimeout(function() {
+    modalBox.classList.add("show-modal-box");
+}, 11500);
 
 hamburgerButton.addEventListener("click", function() {
-    if ((hamburgerButton.innerHTML = "X")) {
-        hamburgerButton.innerHTML = "&#9776";
-    } else {
+    console.log(hamburgerButton.innerHTML);
+    if (hamburgerButton.innerHTML === "☰") {
         hamburgerButton.innerHTML = "X";
+    } else {
+        hamburgerButton.innerHTML = "☰";
     }
     hamburgerMenu.classList.toggle("show-hamburger-menu");
+});
+closeBtn.addEventListener("click", function() {
+    overlay.classList.remove("show-overlay");
+    modalBox.classList.remove("show-modal-box");
 });
 
 hiddenPhotosArray.push(

@@ -4,34 +4,43 @@
 }
 .photo{
 	background-size: cover;
-	height: 70vh;
-	width: 37vw;
-	transition: all 1s;
+	transition: all 0.5s;
 }
 .center{
-	margin: 0 auto;
-	height: 87vh;
-	width: 41%;
+	height: 83vh;
 	min-width: 330px;
+	animation: enlarge-to-center 0.5s linear;
+	animation-fill-mode: forwards;
 }
+	@keyframes enlarge-to-center {
+		from{	//width: 27vw;
+				// height:	60vh;
+			}
+		to{		//width: 41vw;
+				// height: 83vh;
+				box-shadow: 8px 8px 4px 2px rgba(0, 0, 0, 0.8);
+			}
+	}
 .left, .right{
+	position: absolute;
 	margin: 12vh 2px 0 2px;
 	height: 60vh;
 	width: 27vw;
 	z-index: -1;
-	position: absolute;
-}
-
-@keyframes posAbsolute {
-	0% { position: static;}
-	100% { position: absolute;}
 }
 
 .farLeft, .farRight{
+	position: absolute;
 	margin-top: 30vh;
     height: 0vh;
 	width: 0vw;
 	z-index: -2;
+}
+.farLeft{
+	left: 0px;
+}
+.farRight{
+	right: 0px;
 }
 .left{
 	left: 2vw;

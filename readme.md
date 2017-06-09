@@ -1,5 +1,3 @@
-replace photos with square ones or rectangle, use img tags and srcset
-
 photo going to center position doesn't slide over easily because changing from position absolute to static
 
 add a backend to handle sendgrid emails

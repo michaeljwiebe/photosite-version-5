@@ -1,3 +1,6 @@
+//using srcset on img tags, how to deal with
+//why isn't hiddenPhotosArray logging every event?
+
 var photo6 = document.getElementsByClassName("photo6")[0];
 var photo7 = document.getElementsByClassName("photo7")[0];
 var photo8 = document.getElementsByClassName("photo8")[0];
@@ -49,11 +52,7 @@ hiddenPhotosArray.push(
     photo11,
     photo12,
     photo13,
-    photo14,
-    photo15,
-    photo16,
-    photo17,
-    photo18
+    photo14
 );
 
 document.addEventListener("keydown", function(event) {
@@ -65,6 +64,8 @@ document.addEventListener("keydown", function(event) {
 });
 
 carousel.addEventListener("click", function() {
+    console.log(hiddenPhotosArray);
+
     if (event.clientX >= window.innerWidth / 2) {
         movePhotosLeft();
     } else {

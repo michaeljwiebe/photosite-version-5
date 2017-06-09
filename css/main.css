@@ -62,12 +62,11 @@ body {
   justify-content: center; }
 
 .photo {
-  background-size: cover;
   transition: all 1s; }
 
 .center {
-  height: 83vh;
-  min-width: 330px;
+  height: 500px;
+  width: 800px;
   box-shadow: 0 0 0 0 black;
   transition: box-shadow 1s; }
 
@@ -102,60 +101,6 @@ body {
 
 .hidden {
   display: none; }
-
-.photo1 {
-  background-image: url("../img/city-16x9-500w.jpg"); }
-
-.photo2 {
-  background-image: url("../img/kids-16x9-500w.jpg"); }
-
-.photo3 {
-  background-image: url("../img/dance-16x9-500w.jpg"); }
-
-.photo4 {
-  background-image: url("../img/portrait-16x9-500w.jpg"); }
-
-.photo5 {
-  background-image: url("../img/city-16x9-500w-2.jpg"); }
-
-.photo6 {
-  background-image: url("../img/portrait-16x9-500w-2.jpg"); }
-
-.photo7 {
-  background-image: url("../img/dance-16x9-500w-2.jpg"); }
-
-.photo8 {
-  background-image: url("../img/portrait-16x9-500w-3.jpg"); }
-
-.photo9 {
-  background-image: url("../img/kids-16x9-500w-3.jpg"); }
-
-.photo10 {
-  background-image: url("../img/nature-16x9-500w-3.jpg"); }
-
-.photo11 {
-  background-image: url("../img/wedding-16x9-500w.jpg"); }
-
-.photo12 {
-  background-image: url("../img/kids-16x9-500w-2.jpg"); }
-
-.photo13 {
-  background-image: url("../img/nature-16x9-500w-2.jpg"); }
-
-.photo14 {
-  background-image: url("../img/dance-16x9-500w-3.jpg"); }
-
-.photo15 {
-  background-image: url("../img/wedding-16x9-500w-2.jpg"); }
-
-.photo16 {
-  background-image: url("../img/nature-16x9-500w.jpg"); }
-
-.photo17 {
-  background-image: url("../img/kids-16x9-500w-4.jpg"); }
-
-.photo18 {
-  background-image: url("../img/wedding-16x9-500w-3.jpg"); }
 
 .overlay {
   opacity: 0;

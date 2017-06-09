@@ -82,12 +82,12 @@ function movePhotosLeft() {
     //remove classes indicating position
     farLeft.classList.remove("farLeft");
     left.classList.remove("left");
-    center.classList.remove("center");
+    center.classList.remove("center", "box-shadow");
     right.classList.remove("right");
     farRight.classList.remove("farRight");
     //add new position classes
     farRight.classList.add("right");
-    right.classList.add("center");
+    right.classList.add("center", "box-shadow");
     center.classList.add("left");
     left.classList.add("farLeft");
     //hide one photo in prep for removal then remove
@@ -107,7 +107,7 @@ function movePhotosRight() {
     var right = document.getElementsByClassName("right")[0];
     var farRight = document.getElementsByClassName("farRight")[0];
     //remove classes indicating position
-    center.classList.remove("center");
+    center.classList.remove("center", "box-shadow");
     left.classList.remove("left");
     right.classList.remove("right");
     farRight.classList.remove("farRight");
@@ -115,7 +115,7 @@ function movePhotosRight() {
     //add new position classes
     farLeft.classList.add("left");
     center.classList.add("right");
-    left.classList.add("center");
+    left.classList.add("center", "box-shadow");
     right.classList.add("farRight");
     //hide one photo in prep for removal then remove
     farRight.classList.add("hidden");

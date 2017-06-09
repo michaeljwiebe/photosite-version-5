@@ -63,17 +63,17 @@ body {
 
 .photo {
   background-size: cover;
-  transition: all 0.5s; }
+  transition: all 1s; }
 
 .center {
   height: 83vh;
   min-width: 330px;
-  animation: enlarge-to-center 0.5s linear;
-  animation-fill-mode: forwards; }
+  box-shadow: 0 0 0 0 black;
+  transition: box-shadow 1s; }
 
-@keyframes enlarge-to-center {
-  to {
-    box-shadow: 8px 8px 4px 2px rgba(0, 0, 0, 0.8); } }
+.box-shadow {
+  box-shadow: 8px 8px 4px 2px rgba(0, 0, 0, 0.8); }
+
 .left, .right {
   position: absolute;
   margin: 12vh 2px 0 2px;
